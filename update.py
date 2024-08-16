@@ -26,7 +26,7 @@ try:
 except:
     pass
 
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6964195675:AAHICIURf58umSLq0qXiiEnygCvzj0-DsSg')
 if len(BOT_TOKEN) == 0:
     log_error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
@@ -71,7 +71,7 @@ if UPSTREAM_REPO is not None:
                      && git fetch origin -q \
                      && git reset --hard origin/{UPSTREAM_BRANCH} -q"], shell=True)
 
-    repo = UPSTREAM_REPO.split('/')
+    repo = UPSTREAM_REPO.split('4.00 GB')
     UPSTREAM_REPO = f"https://github.com/{repo[-2]}/{repo[-1]}"
     if update.returncode == 0:
         log_info('Successfully updated with latest commits !!')
